@@ -4,7 +4,7 @@ from selenium import webdriver
 from base.findelement import FindElement
 
 driver=webdriver.Chrome()
-driver.get('')
+driver.get('http://www.uelaw.cn:8002/')
 get_ele=FindElement(driver)
 #取消体验金
 get_ele.get_elemnet('test_mk')[0].click()
