@@ -7,11 +7,12 @@ from selenium import webdriver
 class FindElement(object):
     def __init__(self,driver):
         self.driver=driver
-    def get_elemnet(self,value):
-        file=ReadIni()
+    def get_elemnet(self,value,file_name=None,node=None):
+
+        file=ReadIni(file_name,node)
         h=file.get_value(value)
-        by=h.split('>')[0]
-        value=h.split('>')[1]
+        by=h.split('<')[0]
+        value=h.split('<')[1]
         try:
             if by=='id':
                 return self.driver.find_element_by_id(value)

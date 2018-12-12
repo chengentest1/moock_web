@@ -23,3 +23,9 @@ get_ele.get_elemnet('UEServise').click()
 time.sleep(1)
 #选择自动生成
 get_ele.get_elemnet('auto_build')[1].click()
+time.sleep(2)
+#输入搜索框
+#
+get_ele.get_elemnet('Search_input',file_name=None,node='Auto_service').send_keys('asdf123')
+# get_ele.get_elemnet('Search_button',file_name=None,node='Auto_service').click()
+driver.find_element_by_css_selector('div.searchpanel > span').click()
