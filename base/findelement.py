@@ -5,12 +5,11 @@ from selenium import webdriver
 # h.split('>')[0]
 # print(h.split('>')[0])
 class FindElement(object):
-    def __init__(self,driver):
+    def __init__(self,driver,file_name=None,node=None):
         self.driver=driver
-    def get_elemnet(self,value,file_name=None,node=None):
-
-        file=ReadIni(file_name,node)
-        h=file.get_value(value)
+        self.file = ReadIni(file_name, node)
+    def get_elemnet(self,value):
+        h=self.file.get_value(value)
         by=h.split('<')[0]
         value=h.split('<')[1]
         try:
