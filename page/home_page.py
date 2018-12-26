@@ -1,7 +1,7 @@
 from base.findelement import FindElement
 
 
-class HomePage(object):
+class HomePage():
     def __init__(self,driver):
         self.find_e=FindElement(driver)
 
@@ -18,10 +18,10 @@ class HomePage(object):
     def input_password(self):
         return self.find_e.get_elemnet('login_ss')[1]
     #点击登录按钮
-    def click_login_button(self):
+    def login_button(self):
         return self.find_e.get_elemnet('login_button')
     #点击UE服务
-    def click_UEservice(self):
+    def UEservice(self):
         return self.find_e.get_elemnet('UEServise')
     #选择自动生成
     def auto_file(self):
