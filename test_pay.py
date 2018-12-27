@@ -32,9 +32,16 @@ d=AutoBuitFile_Page(driver)
 time.sleep(2)
 d.get_file_type().click()
 d.detail_file().click()
-
 d.generate_button().click()
 time.sleep(4)
+# d.drag_scroll()
+driver.execute_script('document.documentElement.scrollTop=600')
+d.read_button().click()
+time.sleep(3)
+d.next_button().click()
+time.sleep(4)
+d.option_ABCD_button()[0].click()
+d.option_next_button()[1].click()
 
 
 

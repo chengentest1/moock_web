@@ -26,9 +26,12 @@ class FindElement(object):
                 return self.driver.find_element_by_xpath(valu)
             elif by=='css':
                 return self.driver.find_element_by_css_selector(valu)
+            elif by=='css_s':
+                return  self.driver.find_elements_by_css_selector(valu)
             elif by=='classNames':
-
                 return self.driver.find_elements_by_class_name(valu)
+            elif by=='js':
+                return self.driver.execute_script(valu)
             else:
                 return self.driver.find_element_by_link_text(valu)
         except:

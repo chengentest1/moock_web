@@ -23,4 +23,4 @@ class ReadIni(object):
         return data
 if __name__ == '__main__':
     read_ini=ReadIni()
-    print(read_ini.get_value('user_email'))
+    print(read_ini.get_value('test_mk'))

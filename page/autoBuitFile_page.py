@@ -17,8 +17,10 @@ class AutoBuitFile_Page():
     def read_button(self):
         return self.find_e.get_elemnet('read_button')
     def next_button(self):
-        return self.find_e.get_elemnet('next_button')
+        return self.find_e.get_elemnet('next_button')[1]
     def option_ABCD_button(self):
         return self.find_e.get_elemnet('option_ABCD_button')
     def option_next_button(self):
         return self.find_e.get_elemnet('option_next_button')
+    def drag_scroll(self):
+        self.find_e.get_elemnet('drag_scroll')
