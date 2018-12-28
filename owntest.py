@@ -60,4 +60,16 @@ time.sleep(2)
 
 #点击我的订单
 driver.find_elements_by_css_selector('.luyouspan')[1].click()
-
+#点击去付款
+# driver.find_element_by_css_selector('table.Doc_tb > tr:nth-child(2) > td.Doc_td.pl-10.width27 > button:nth-child(1) > span > a').click()
+#点击取消
+# driver.find_element_by_css_selector('table.Doc_tb > tr:nth-child(2) > td.Doc_td.pl-10.width27 > button:nth-child(2) > span').click()
+# time.sleep(1)
+# #点击确认
+# driver.find_element_by_css_selector('button.el-button.btn-ToastConfirm.el-button--default.el-button--mini>span').click()
+# #点击我再想想
+# driver.find_element_by_css_selector('button.el-button.ml-20.btn-ToastCancel.el-button--default.el-button--mini>span').click()
+# #点击删除
+# driver.find_element_by_css_selector('table.Doc_tb> tr:nth-child(2) > td.Doc_td.pl-10.width27 > button > span > a').click()
+#点击搜索
+driver.find_element_by_css_selector('p.search-btn>span').click()
