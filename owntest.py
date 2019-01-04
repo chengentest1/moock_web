@@ -60,4 +60,7 @@ time.sleep(2)
 
 #点击我的订单
 driver.find_elements_by_css_selector('.luyouspan')[1].click()
-
+time.sleep(3)
+driver.find_element_by_css_selector('.screen_title>span:nth-child(2)').click()
+driver.find_element_by_css_selector('.screen_content>li>div>div>span').click()
+driver.find_element_by_css_selector('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(2) > span').click()
