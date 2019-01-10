@@ -66,6 +66,10 @@ driver.find_element_by_css_selector('.screen_content>li>div>div>span').click()
 driver.find_element_by_css_selector('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(2) > span').click()
 time.sleep(3)
 # driver.find_element_by_css_selector('[placeholder="订单类型"]').click()
+# time.sleep(3)
+
 # driver.find_element_by_xpath('/html/body/div[5]/div[1]/div[1]/ul/li[3]/span').click()
 # driver.find_element_by_css_selector('body > div:nth-child(7) > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li.el-select-dropdown__item.hover > span').click()
 driver.find_element_by_css_selector('button.el-button.screen_btn.el-button--default').click()
+
+driver.find_element_by_css_selector('[href="javascript:;"][class="cf5a"]').click()
